@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cattle Health Monitoring</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cattle Health Monitoring System</h1>
+        <form id="healthForm">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" required>
+
+            <label for="bodyConditionScore">Body Condition Score:</label>
+            <input type="number" id="bodyConditionScore" name="bodyConditionScore" required>
+
+            <label for="temperature">Temperature (°C):</label>
+            <input type="number" step="0.1" id="temperature" name="temperature" required>
+
+            <label for="heartRate">Heart Rate (bpm):</label>
+            <input type="number" id="heartRate" name="heartRate" required>
+
+            <label for="milkYield">Milk Yield (L):</label>
+            <input type="number" id="milkYield" name="milkYield" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="predictionResult"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
